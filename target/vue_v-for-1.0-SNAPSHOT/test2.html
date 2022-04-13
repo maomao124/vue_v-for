@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--
+Project name(项目名称)：vue_v-for
+  File name(文件名): test2
+  Authors(作者）: mao
+  Author QQ：1296193245
+  GitHub：https://github.com/maomao124/
+  Date(创建日期)： 2022/4/13
+  Time(创建时间)： 21:26
+  Description(描述)： 无
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="vue.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <ul>
+        <li v-for="(i,index) in arr">
+            序号：{{i}},数组下标：{{index}}
+        </li>
+    </ul>
+</div>
+
+<script>
+    var app = new Vue({
+        el: "#app",
+        data: {
+            arr: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        }
+        ,
+        methods: {}
+    })
+
+</script>
+</body>
+</html>
